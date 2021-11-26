@@ -1,0 +1,97 @@
+<%- include('../partials/head', {tituloWeb: 'Registro', estilos:'login.css'}); %>
+
+
+  
+<div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-7 mx-auto">
+        <div class="card border-0 shadow rounded-3 my-5">
+          <div class="card-body p-4 p-sm-5">
+            <img src="./assets/img/logo-ixtapp.png" class="" alt="">
+            <h3 class="card-title text-center mb-5 fw-light fs-5">Registro de Usuario</h3>
+            <form autocomplete="off" id="formRegistro">
+              <div class=" mb-3">
+                <label >Nombre Usuario</label>
+                <input type="text" class="form-control" id="usuario" name="usuario"  required>
+              </div>
+              <div class="form mb-3">
+                <label for="floatingInput">Correo</label>
+                <input type="email" class="form-control" id="email" name="email"  required>
+              </div>
+              <div class=" mb-3">
+                <label for="floatingInput">Contraseña</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+              </div>
+              <div class=" mb-3 ">
+                <label >Dirección</label>
+              </div>
+              
+              <div class=" mb-3 ">
+                <label for="floatingPassword">Calle</label>
+                <input type="text" class="form-control" id="calle" name="calle" required>
+              </div>
+              <div class="row">
+                  <div class=" mb-1 col-6">
+                    <label for="floatingInput">N&uacute;mero </label>
+                    <input type="text" class="form-control" id="numeroDireccion"  name="numeroDireccion"  required>
+                  </div>
+    
+                  <div class=" mb-3 col-6">
+                    <label for="floatingInput">Colonia</label>
+                    <input type="text" class="form-control" id="colonia"  name="colonia"  required>
+                  </div>
+    
+                  <div class=" mb-3 col-6">
+                    <label for="floatingInput">Estado</label>
+                    <input type="text" class="form-control" id="estado" name="estado" required>
+                  </div>
+
+                  <div class=" mb-3 col-6">
+                    <label for="floatingInput">C.P</label>
+                    <input type="text" class="form-control" id="cp" name="cp"  required>
+                  </div>
+
+                  
+                  <div class=" mb-3 col-6">
+                    <label for="floatingInput">Referencia</label>
+                    <input type="text" class="form-control" id="referencia" name="referencia" >
+                  </div>
+    
+                  <div class=" mb-3 col-6">
+                    <label for="floatingInput">Teléfono</label>
+                    <input type="number" class="form-control" id="telefono" name="telefono"  required>
+                  </div>
+
+              </div>
+
+              
+
+        
+              <div class="d-grid">
+                <button class="btn btn-primary btn-login text-uppercase fw-bold" id="btnRegistro">Registrarse</button>
+              </div>
+              <!-- <hr class="my-4">
+              <div class="d-grid mb-2">
+                <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">
+                  <i class="fab fa-google me-2"></i> Sign in with Google
+                </button>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-facebook btn-login text-uppercase fw-bold" type="submit">
+                  <i class="fab fa-facebook-f me-2"></i> Sign in with Facebook
+                </button>
+              </div> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="module" src="./js/providers/verificar-token.js"></script>
+
+<script type="module" src="./js/providers/register.js"></script>
+
+
+  <!-- foot -->
+<%- include('../partials/foot') %>

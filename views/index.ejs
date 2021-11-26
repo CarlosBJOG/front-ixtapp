@@ -1,0 +1,227 @@
+<%- include('./partials/head',  {tituloWeb:'Home', estilos: 'styles.css'} );  %>
+
+    <body id="page-top">
+      <%- include('./partials/header' );  %>
+
+ 
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <a  href="#!"><img src="./assets/img/logo-ixtapp.png" alt="..." class="rounded-circle"/></a>
+
+                    <h2 class="section-heading text-uppercase">Información</h2>
+                    <h3 class="section-subheading text-muted">Servicios Gernerales.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/home/primaria.jfif" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Educacion Básica</div>
+                                <div class="portfolio-caption-subheading text-muted">Información</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/home/secundaria.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Educaci&oacute;n B&aacute;sica</div>
+                                <div class="portfolio-caption-subheading text-muted">Información</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/home/covid.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">COVID-19</div>
+                                <div class="portfolio-caption-subheading text-muted">Información</div>
+                            </div>
+                        </div>
+                    </div>
+       
+       
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients-->
+        <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <%- include('./partials/footer') %>
+
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade " id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content ">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <div class="containner">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <img class="img-fluid d-block " src="assets/img/home/primaria.jfif" alt="..." style="width: 100%;" />
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card text-secondary bg-light mb-3" >
+                                                    <div class="card-header">Educaci&oacute;n B&aacute;sica</div>
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Requisitos para obtener el certificuado </h5>
+                                                      <p class="card-text">Hoy en día es posible estudiar la primaria a través de Internet gracias al programa MEVyT, que está avalado por la SEP, y lo mejor es que es gratuito. Cuando concluyes recibes un certificado con validez de la SEP.</p>
+                                                        <a href="https://estudiarenlinea.net/primaria/"  target="_blank" >https://estudiarenlinea.net/primaria/</a>
+                                                    </div>
+                                                  </div>
+                                                
+                                            </div>
+                              
+
+                                        </div>
+                                    </div>
+
+                            
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <div class="containner">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <img class="img-fluid d-block " src="assets/img/home/secundaria.jpg" alt="..." style="width: 100%;" />
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card text-secondary bg-light mb-3" >
+                                                    <div class="card-header">Educaci&oacute;n B&aacute;sica</div>
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Requisitos para obtener el certificuado </h5>
+                                                      <p class="card-text">¿Deseas estudiar la secundaria en línea en México y no sabes cómo hacerlo?
+                                                           A continuación te mostraremos toda la información que necesitas. Cualquiera puede inscribirse,
+                                                            solamente tienes que ver este artículo y encontrarás las grandes posibilidades de estudiar la secundaria abierta SEP 
+                                                            de una manera tan sencilla y práctica..</p>
+                                                        <a href="https://estudiarenlinea.net/secundaria-abierta-en-linea/"  target="_blank" >https://estudiarenlinea.net/secundaria-abierta-en-linea/</a>
+                                                    </div>
+                                                  </div>
+                                                
+                                            </div>
+                              
+
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="modal-body">
+                                      <!-- Project details-->
+                                      <div class="containner">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <img class="img-fluid d-block " src="assets/img/home/covid.jpg" alt="..." style="width: 100%;" />
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card text-secondary bg-light mb-3" >
+                                                    <div class="card-header">INFORMACIO&acute;N SOBRE COVID-19</div>
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">  </h5>
+                                                      <p class="card-text">Para disminuir el riesgo de contagio de COVID-19 es indispensable lavarse las manos frecuentemente con agua y jabón, taparse la boca con el interior del codo al estornudar o toser, evitar tocarse la cara con las manos sucias y saludar de mano o beso.</p>
+                                                        <a href="https://coronavirus.gob.mx/"  target="_blank" >https://coronavirus.gob.mx/</a>
+                                                    </div>
+                                                  </div>
+                                                
+                                            </div>
+                              
+
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                            Cerrar 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+<script type="module" src="./js/providers/verificar-token.js"></script>
+<!-- foot -->
+<%- include('./partials/foot') %>

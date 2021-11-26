@@ -1,0 +1,89 @@
+<%- include('../partials/head', {tituloWeb: 'Bolsa de trabajo' , estilos: 'styles.css' }); %>
+    <%- include('../partials/header'); %>
+
+
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5"
+                        width="150px"
+                        src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span
+                        class="font-weight-bold" id="nombrePerfil"></span><span
+                        class="text-black-50">edogaru@mail.com.my</span><span> </span></div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Mi Perfil</h4>
+                    </div>
+                    <form action="" id="formEditarPerfil">
+                    <div class="row mt-2">
+
+                        <input type="text"  id="idUsuario" name="idUsuario"class="form-control"  value="" hidden>
+                        <div class="col-md-6"><label class="labels">Nombre de Usuario</label><input type="text"  id="usuario" name="usuario"
+                                class="form-control" placeholder="Nombre..." value=""></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">Correo Electr&oacute;nico</label><input id="correo" name="correo" type="text"
+                                class="form-control" placeholder="ejemplo@gmail.com" value="" disabled></div>
+                        <div class="col-md-12"><label class="labels">Tel&eacute;fono</label><input type="text" id="telefono" name="telefono"
+                                class="form-control" placeholder="55 98 78 65 76" value="" required></div>
+                        <div class="col-md-12"><label class="labels">Calle</label><input type="text"  id="calle" name="calle"
+                                class="form-control" placeholder=" calle s/n" value="" required></div>
+                        <div class="col-md-12"><label class="labels">Número int/ext</label><input type="text" id="numeroint" name="numeroint"
+                                class="form-control" placeholder="Num int 34" value="" required></div>
+                        <div class="col-md-12"><label class="labels">Colonia</label><input type="text" id="colonia" name="colonia"
+                                class="form-control" placeholder="Ixtapaluca" value="" required></div>
+                        <div class="col-md-12"><label class="labels">Estado</label><input type="text"  id="estado" name="estado"
+                                class="form-control" placeholder="M&eacute;xico" value="" required></div>
+
+                        <div class="col-md-12"><label class="labels">C.P</label><input type="text" class="form-control" id="cp" name="cp" 
+                                placeholder="C&oacute;digo postal" value="" required></div>
+                        <div class="col-md-12"><label class="labels">Referencia</label><input type="text" id="referencia" name="referencia"
+                                class="form-control" placeholder="entre calle y av" value="" ></div>
+
+                    </div>
+                </form>
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" id="btnEditar" type="button"> Editar Perfil </button></div>
+                </div>
+            </div>
+
+          
+
+           
+            <div class="col-md-4">
+                <div class="p-3 py-5">
+                        <form id="formServicios">
+                    <div class="d-flex justify-content-between align-items-center experience">
+                        <span class="border px-3 p-1 add-experience"><a type="button" id="btnAgregar"><i class="fa fa-plus"></i>&nbsp;Agregar Categoria</a></span>
+                    </div>
+                    <br>
+                        <div class="col-md-12">
+                            <label class="labels">Tipos de Servicios</label>
+                            <select class="form-select" aria-label="Default select example" id="categorias" name="categorias" required>
+                                <option selected></option>
+                             </select>
+                        </div>
+                        <br>
+                        <div class="col-md-12">
+                                <label class="labels">Nombre de Servicio</label>
+                                <input type="text" class="form-control"  id="nombreServicio" name="nombreServicio" required>
+                        </div>
+                        <br>
+                        <div class="col-md-12">
+                                <label class="labels">Descripci&oacute;n del Servicio</label>
+                                <input type="text" class="form-control"  id="descripcionServicio" name="descripcionServicio" required>
+                        </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/providers/verificar-token.js"></script>
+    <script type="module" src="./js/providers/miperfil.js"></script>
+
+
+    <%- include('../partials/footer'); %>
+
+        <%- include('../partials/foot'); %>
